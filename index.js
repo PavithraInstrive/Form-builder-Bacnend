@@ -11,7 +11,7 @@ const serviceAccount = require('./form-builder-a6dce-firebase-adminsdk-fbsvc-ff4
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.json()); // use JSON
+app.use(bodyParser.json()); 
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
